@@ -1,5 +1,251 @@
-.hero {
-    background-image: url(./images/2.jpg);
-    width: 1070;
+:root {
+    --white-color: #ffffff;
+    --primery-color: #555555;
+    --accent-color: #ff6c00;
+    --price-color: #9DA4BD;
+    --h-color: #303030;
+}
 
+
+.hero-desc.title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-desc {
+    color: var(--price-color);
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+
+/* header */
+body {
+    background-color: green;
+    font-family: 'open sans';
+    font-weight: 400;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+    color: var(--accent-color);
+}
+
+.nav-item {
+    color: var(--white-color);
+}
+
+h1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.13;
+    letter-spacing: 0.05em;
+}
+
+/* button */
+.button {
+    color: var(--white-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0);
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--accent-color);
+
+
+}
+
+.secondary-button {
+    color: var(--h-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.secondary-button:hover,
+.secondary-button:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+
+/* socials-item */
+.socials-item,
+.advantages,
+.our-barbers,
+.working {
+    color: var(--h-color)
+}
+
+.socials-item:hover,
+.socials-item:focus,
+.qualification {
+    color: var(--accent-color);
+}
+
+
+
+h1,
+.prices h2,
+.booking,
+.contacts-list,
+.working-hours {
+    color: var(--white-color);
+}
+
+h2 {
+    color: var(--h-color);
+}
+
+/* contact-item */
+.contact-item,
+.prices p,
+.advantages-deskr,
+.copyright {
+    color: var(--price-color);
+}
+
+.contact-item.map {}
+
+/* about */
+.about {
+    color: var(--h-color);
+}
+
+.about-text,
+.about-desk {
+    color: var(--primery-color);
+}
+
+.about-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.16;
+    text-transform: uppercase;
+}
+
+.about h2 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+
+.about-desk {
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+}
+
+
+footer,
+.our-barbers {
+    background-color: #F7F7F7;
+    ;
+}
+
+/* nav */
+.nav-list,
+.nav-item {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-style: normal;
+}
+
+/* soshial items */
+.socials-item {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36px;
+    letter-spacing: 0.2em;
+}
+
+/* prices */
+.prices>h2,
+.contacts h2 {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.04;
+    letter-spacing: 0.05em;
+}
+
+.prices>p {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.37;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.price-list {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+
+/* advantages */
+.advantages>h2,
+.our-barbers>h2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.04;
+    letter-spacing: 0.05em;
+}
+
+.advantages-deskr {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em
+}
+
+.barbers-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.37;
+    text-transform: uppercase;
+}
+
+.barbers-name {
+    font-size: 18px;
+    line-height: 1.39px;
+    text-align: center;
+    letter-spacing: 0.02em
+}
+
+.qualification {
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.02em;
 }
