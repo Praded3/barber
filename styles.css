@@ -124,7 +124,12 @@ h2 {
     color: var(--price-color);
 }
 
-.contact-item.map {}
+.contact-item.map {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
 
 /* about */
 .about {
@@ -186,6 +191,7 @@ footer,
     font-size: 11px;
     line-height: 1.36px;
     letter-spacing: 0.2em;
+    text-decoration: none;
 }
 
 /* prices */
@@ -248,4 +254,50 @@ footer,
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.02em;
+}
+
+.advantages-item {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.advantages-deskr {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36px;
+    text-align: center;
+    color: var(--h-color);
+}
+
+
+/* contacts */
+
+.contacts {
+    background-color: #191C26;
+}
+
+.working-hours {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.37;
+    text-transform: uppercase;
+}
+
+.contact-item {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    font-style: normal;
+    text-decoration: none;
+}
+
+[href="mailto:barbershop@email.com"] {
+    text-decoration: underline
+}
+
+ul {
+    list-style: none;
 }
