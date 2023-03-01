@@ -1,303 +1,270 @@
 :root {
-    --white-color: #ffffff;
-    --primery-color: #555555;
+    --primery-text-color-white-theme: #555555;
+    --primery-text-color-dark-theme: #9DA4BD;
+    --secondary-text-color-white-theme: #303030;
+    --secondary-text-color-dark-theme: #ffffff;
+    --subtitle-dark-theme-color: rgba(157, 164, 189, 0.6);
     --accent-color: #ff6c00;
-    --price-color: #9DA4BD;
-    --h-color: #303030;
+    --primery-font-family: 'Open Sans', sans-serif;
+    --secondary-font-family: 'Raleway', sans-serif;
 }
 
+.link {
+    text-decoration: none;
+}
 
-.hero-desc.title {
+.list {
+    list-style: none;
+
+}
+
+/* ===============component=============== */
+.media-list-link {
+    font-family: var(--primery-font-family);
     font-weight: 600;
     font-size: 11px;
-    line-height: 1.36;
-    text-transform: uppercase;
-    color: rgba(157, 164, 189, 0.6);
+    line-height: 1.37;
+    letter-spacing: 0.2em;
+    color: var(--secondary-text-color-white-theme);
 }
 
-.hero-desc {
-    color: var(--price-color);
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
+.media-list-link:hover,
+.media-list-link:focus {
+    color: var(--accent-color)
 }
 
-/* header */
-body {
-    background-color: green;
-    font-family: 'open sans';
-    font-weight: 400;
-}
-
-.nav-item:hover,
-.nav-item:focus {
-    color: var(--accent-color);
-}
-
+.menu-item-link,
 .nav-item {
-    color: var(--white-color);
-}
-
-h1 {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 72px;
-    line-height: 1.13;
-    letter-spacing: 0.05em;
-}
-
-/* button */
-.button {
-    color: var(--white-color);
-    border: 1px solid var(--accent-color);
-    border-radius: 10px;
-    background-color: rgb(0, 0, 0, 0);
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-}
-
-.button:hover,
-.button:focus {
-    background-color: var(--accent-color);
-
-
-}
-
-.secondary-button {
-    color: var(--h-color);
-    border: 1px solid var(--accent-color);
-    border-radius: 10px;
-    background-color: rgb(0, 0, 0, 0);
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-}
-
-.secondary-button:hover,
-.secondary-button:focus {
-    background-color: var(--accent-color);
-    color: var(--white-color);
-}
-
-
-/* socials-item */
-.socials-item,
-.advantages,
-.our-barbers,
-.working {
-    color: var(--h-color)
-}
-
-.socials-item:hover,
-.socials-item:focus,
-.qualification {
-    color: var(--accent-color);
-}
-
-
-
-h1,
-.prices h2,
-.booking,
-.contacts-list,
-.working-hours {
-    color: var(--white-color);
-}
-
-h2 {
-    color: var(--h-color);
-}
-
-/* contact-item */
-.contact-item,
-.prices p,
-.advantages-deskr,
-.copyright {
-    color: var(--price-color);
-}
-
-.contact-item.map {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
-}
-
-/* about */
-.about {
-    color: var(--h-color);
-}
-
-.about-text,
-.about-desk {
-    color: var(--primery-color);
-}
-
-.about-title {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.16;
-    text-transform: uppercase;
-}
-
-.about h2 {
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.17;
-    letter-spacing: 0.05em;
-}
-
-.about-text {
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
-}
-
-.about-desk {
-    font-size: 14px;
-    line-height: 1.86;
-    letter-spacing: 0.02em;
-}
-
-
-footer,
-.our-barbers {
-    background-color: #F7F7F7;
-    ;
-}
-
-/* nav */
-.nav-list,
-.nav-item {
+    font-family: var(--primery-font-family);
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.1em;
-    text-decoration: none;
+    color: var(--secondary-text-color-dark-theme);
+    background-color: aqua;
+}
+
+.nav-item {
     font-style: normal;
 }
 
-/* soshial items */
-.socials-item {
+.menu-item-link:hover,
+.menu-item-link:focus,
+.nav-item:hover,
+.nav-item:hover {
+    color: var(--accent-color)
+}
+
+.modal-btn {
+    font-family: var(--primery-font-family);
     font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36px;
-    letter-spacing: 0.2em;
-    text-decoration: none;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--secondary-text-color-dark-theme);
 }
 
-/* prices */
-.prices>h2,
-.contacts h2 {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.04;
-    letter-spacing: 0.05em;
+.modal-btn:hover {
+    background-color: var(--accent-color);
 }
 
-.prices>p {
+.secondary-button {
+    font-family: var(--primery-font-family);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--secondary-text-color-white-theme);
+}
+
+.secondary-button:hover,
+.secondary-button:focus {
+    color: var(--secondary-text-color-dark-theme);
+    background-color: var(--accent-color);
+}
+
+.suptitle {
+    font-family: var(--primery-font-family);
     font-weight: 600;
     font-size: 11px;
     line-height: 1.37;
     text-transform: uppercase;
-    color: rgba(157, 164, 189, 0.6);
 }
 
-.price-list {
+.subtitle-dark-theme {
+    color: var(--subtitle-dark-theme-color)
+}
+
+.subtitle-white-theme {
+    color: var(--secondary-text-color-white-theme);
+}
+
+.secondary-description {
+    font-family: var(--primery-font-family);
+    font-weight: 400;
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: 0.02em;
+
 }
 
-/* advantages */
-.advantages>h2,
-.our-barbers>h2 {
-    font-family: 'Raleway';
-    font-style: normal;
+.secondary-description-dark-theme {
+    color: var(--primery-text-color-dark-theme);
+}
+
+.secondary-description-white-theme {
+    color: var(--primery-text-color-white-theme);
+}
+
+.section-title {
+    font-family: var(--secondary-font-family);
     font-weight: 700;
     font-size: 42px;
     line-height: 1.04;
     letter-spacing: 0.05em;
+
 }
 
-.advantages-deskr {
+.section-title-white-theme {
+    color: var(--secondary-text-color-white-theme);
+}
+
+.section-title-dark-theme {
+    color: var(--secondary-text-color-dark-theme);
+    background-color: #ff6c00;
+}
+
+/* ===============/component=============== */
+
+/* ===============hero=============== */
+.main-title {
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    color: var(--secondary-text-color-dark-theme);
+    background-color: #ff6c00;
+}
+
+
+/* ===============/hero=============== */
+/* ===============about=============== */
+.about-description {
+    font-family: var(--primery-font-family);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--primery-text-color-white-theme);
+}
+
+/* ===============/about=============== */
+
+/* ===============prices=============== */
+.price-list {
+    font-family: var(--primery-font-family);
+    font-weight: 400;
     font-size: 18px;
     line-height: 1.67;
-    letter-spacing: 0.02em
+    letter-spacing: 0.02em;
+    color: var(--primery-text-color-dark-theme);
 }
 
-.barbers-text {
+
+/* ===============/prices=============== */
+
+/* ===============advantages=============== */
+.advantages-item-figure {
+    font-family: var(--primery-font-family);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: var(--secondary-text-color-white-theme);
+}
+
+.advantages-item-description {
+    font-family: var(--primery-font-family);
     font-weight: 600;
     font-size: 11px;
     line-height: 1.37;
-    text-transform: uppercase;
-}
-
-.barbers-name {
-    font-size: 18px;
-    line-height: 1.39px;
     text-align: center;
-    letter-spacing: 0.02em
+    color: var(--secondary-text-color-white-theme);
 }
 
-.qualification {
+/* ===============/advantages=============== */
+
+/* ===============uor barbesr=============== */
+.barbers-name {
+    font-family: var(--primery-font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color-white-theme);
+}
+
+.barbers-qualification {
+    font-family: var(--primery-font-family);
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.02em;
+    color: var(--accent-color);
 }
 
-.advantages-item {
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.05em;
+/* ===============/uor barbesr=============== */
+/* ===============contacts=============== */
+
+.contacts-list {
+    font-family: var(--primery-font-family);
+
 }
 
-.advantages-deskr {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36px;
-    text-align: center;
-    color: var(--h-color);
-}
-
-
-/* contacts */
-
-.contacts {
-    background-color: #191C26;
-}
-
-.working-hours {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.37;
-    text-transform: uppercase;
-}
-
-.contact-item {
+.contacts-list-item-map,
+.contacts-list-item-phone,
+.contacts-list-item-mail {
+    font-style: normal;
+    font-weight: 400;
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: 0.02em;
-    font-style: normal;
-    text-decoration: none;
+    text-decoration-line: none;
+    color: var(--primery-text-color-dark-theme);
+
 }
 
-[href="mailto:barbershop@email.com"] {
-    text-decoration: underline
+.contacts-list-item-map {
+    font-weight: 700;
 }
 
-ul {
-    list-style: none;
+.contacts-list-item-mail {
+    text-decoration-line: underline;
 }
+
+.wh {
+    color: var(--secondary-text-color-dark-theme);
+    background-color: #ff6c00;
+}
+
+/* ===============/contacts=============== */
+/* ===============footer=============== */
+.copyright {
+    font-family: var(--primery-font-family);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: var(--primery-text-color-dark-theme);
+}
+
+/* ===============/footer=============== */
