@@ -11,70 +11,95 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
     <!-- header -->
     <header class="page-header">
-        <nav class="page-nav">
-            <a class="logo" href="index.html">
-                <img class="logo-img" src="./images/logo.svg" alt="логотип компании"></a>
-            <ul class="menu list ">
-                <li class="menu-item"><a class="menu-item-link link" href="#barberShop">About</a></li>
-                <li class="menu-item"><a class="menu-item-link link" href="#services-prices">Services and prices</a>
-                </li>
-                <li class="menu-item"><a class="menu-item-link link" href="#our-barbers">Barbers</a></li>
-                <li class="menu-item"><a class="menu-item-link link" href="#contacts">Contacts</a></li>
-            </ul>
-        </nav>
-        <address class="phone-number"><a class="nav-item link" href="tel:+380441111111">+38 044 111 11 11</a>
-            <button class="modal-btn" type="button">Online-booking</button>
-        </address>
+        <div class="container">
+            <nav class="page-nav">
+                <div class="page-nav-container">
+                    <a class="logo" href="index.html">
+                        <img class="logo-img" src="./images/logo.svg" alt="логотип компании"></a>
+                    <ul class="menu list ">
+                        <li class="menu-item"><a class="menu-item-link link" href="#barberShop">About</a></li>
+                        <li class="menu-item"><a class="menu-item-link link" href="#services-prices">Services and
+                                prices</a>
+                        </li>
+                        <li class="menu-item"><a class="menu-item-link link" href="#our-barbers">Barbers</a></li>
+                        <li class="menu-item"><a class="menu-item-link link" href="#contacts">Contacts</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="address-container"><a class="nav-item link" href="tel:+380441111111">+38 044 111 11
+                    11</a>
+                <button class="modal-btn" type="button">Online-booking</button>
+            </div>
+        </div>
     </header>
     <main>
         <!-- hero -->
         <section class="hero" id="barberShop">
-            <div class="hero-left-side">
-                <ul class="media-list list">
-                    <li class="media-list-item"><a class="media-list-link link" href="" target="_blank"
-                            rel="noopener no-referrel nofollow">Instagram</a>
-                    </li>
-                    <li class="media-list-item"><a class="media-list-link link" href="" target="_blank"
-                            rel="noopener no-referrel nofollow">Youtube</a>
-                    </li>
-                </ul>
+            <div class="container">
+                <div class="hero-left-side">
+                    <ul class="media-list list">
+                        <li class="media-list-item"><a class="media-list-link link" href="" target="_blank"
+                                rel="noopener no-referrel nofollow">Instagram</a>
+                        </li>
+                        <li class="media-list-item"><a class="media-list-link link" href="" target="_blank"
+                                rel="noopener no-referrel nofollow">Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hero-right-side">
+                    <p class="suptitle suptitle-hero subtitle-dark-theme">A hair salon for men in Kyiv</p>
+                    <h1 class="main-title">BarberShop</h1>
+                    <p class="secondary-description secondary-description-hero secondary-description-dark-theme">We are
+                        experts in trendy men’s
+                        haircuts. We work quickly,
+                        carefully and
+                        with style.
+                    </p>
+                </div>
             </div>
-            <div class="hero-right-side">
-                <p class="suptitle subtitle-dark-theme">A hair salon for men in Kyiv</p>
-                <h1 class="main-title">BarberShop</h1>
-                <p class="secondary-description secondary-description-dark-theme">We are experts in trendy men’s
-                    haircuts. We work quickly,
-                    carefully and
-                    with style.
-                </p>
-            </div>
+
         </section>
         <!-- about -->
-        <section class="about" id="about">
-            <ul class="list">
-                <li><img src="./images/barber-working-1.jpg" alt="Barber-working" width="270" height="445"></li>
-                <li><img src="./images/barber-working-2.jpg" alt="Barber-working" width="270" height="445"></li>
-            </ul>
-            <p class="suptitle subtitle-white-theme">About</p>
-            <h2 class="section-title section-title-white-theme">Best Barbershop in your city</h2>
-            <p class="secondary-description secondary-description-white-theme">If you want to add more confidence to
-                your image, you should definitely visit
-                us.</p>
-            <p class="about-description">We are a team that never stops at what has been achieved and are thirsty for
-                changes.
-                And when you fall into the hands of our master, you will never be the same again. We are a team that is
-                always "on the same wave" with
-                clients. Therefore, we are always ready to improve everyone who comes to us!</p>
-            <button type="button" class="secondary-button">Online-booking</button>
+        <section class="section about" id="about">
+            <div class="container about-container">
+
+                <ul class="container-list list">
+                    <li class="barber-working"><img src="./images/barber-working-1.jpg" alt="Barber-working" width="270"
+                            height="445">
+                    </li>
+                    <li class="barber-working"><img src="./images/barber-working-2.jpg" alt="Barber-working" width="270"
+                            height="445">
+                    </li>
+                </ul>
+                <div class="container-description">
+                    <p class="suptitle subtitle-white-theme">About</p>
+                    <h2 class="section-title section-title-white-theme">Best Barbershop in your city</h2>
+                    <p class="secondary-description secondary-description-white-theme">If you want to add more
+                        confidence to
+                        your image, you should definitely visit
+                        us.</p>
+                    <p class="about-description">We are a team that never stops at what has been achieved and are
+                        thirsty
+                        for
+                        changes.
+                        And when you fall into the hands of our master, you will never be the same again. We are a team
+                        that
+                        is
+                        always "on the same wave" with
+                        clients. Therefore, we are always ready to improve everyone who comes to us!</p>
+                    <button type="button" class="secondary-button">Online-booking</button>
+                </div>
+            </div>
         </section>
         <!-- prices -->
-        <section class="prices" id="services-prices">
+        <section class="section prices" id="services-prices">
             <p class="suptitle subtitle-dark-theme">Spend your time with the best masters</p>
             <h2 class="section-title section-title-dark-theme">Services and prices</h2>
             <ul class="price-list list">
@@ -116,7 +141,7 @@
             <button type="button" class="modal-btn">Online-booking</button>
         </section>
         <!-- advantages -->
-        <section class="advantages">
+        <section class="section advantages">
             <ul class="advantages-list list">
                 <li class="advantages-item">
                     <p class="advantages-item-figure">600</p>
@@ -143,9 +168,9 @@
                 read 10 times.</p>
         </section>
         <!-- uor barbesr -->
-        <section class="our-barbers" id="our-barbers">
+        <section class="section our-barbers" id="our-barbers">
             <p class="suptitle subtitle-white-theme">For true enjoyers of the atmosphere</p>
-            <h2 class="section-title section-title-white-theme">Our barbers</h2>
+            <h2 class="section-title section-title-white-theme section-title-white-theme-exception">Our barbers</h2>
             <ul class="barbers-list list">
                 <li class="barbers-items">
                     <img src="./images/john-smith.jpg" alt="John Smith" width="370" height="346">
@@ -165,8 +190,8 @@
             </ul>
         </section>
         <!-- working -->
-        <section class="working">
-            <p class="suptitle subtitle-white-theme">In Latin, "barba" means "beard"</p>
+        <section class="section working">
+            <p class="suptitle suptitle-exception subtitle-white-theme">In Latin, "barba" means "beard"</p>
             <h2 hidden>Working</h2>
             <ul class="working-proces-list list">
                 <li class="working-proces-list"><img class="working-proces-list-img" src="./images/working1.jpg"
@@ -180,9 +205,9 @@
             </ul>
         </section>
         <!-- contacts -->
-        <section class="contacts" id="contacts">
+        <section class="section contacts" id="contacts">
             <h2 class="section-title section-title-dark-theme">Online-booking</h2>
-            <h2 class="section-title section-title-dark-theme">Contacts</h2>
+            <h2 class="section-title section-title-dark-theme section-title-white-dark-exception">Contacts</h2>
             <address>
                 <ul class="contacts-list list">
                     <li class="contacts-list-item"><a class="contacts-list-item-map"
