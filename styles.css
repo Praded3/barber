@@ -53,8 +53,7 @@ address {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    align-items: center;
+
 }
 
 
@@ -62,7 +61,8 @@ address {
 
 /* ===========header=========== */
 
-.page-nav-container {
+.page-nav-container,
+.container-header {
     display: flex;
     align-items: center;
 }
@@ -216,7 +216,7 @@ address {
     font-family: var(--secondary-font-family);
     font-weight: 700;
     font-size: 42px;
-    line-height: 1.04;
+    line-height: 1.16;
     letter-spacing: 0.05em;
 
 }
@@ -243,8 +243,19 @@ address {
 /* ===============/component=============== */
 
 /* ===============hero=============== */
-.media-list-item {
-    /* transform: rotate(-90deg);*/
+.media-list {
+    transform: rotate(-90deg);
+    display: flex;
+    /* outline: 1px solid tomato; */
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.container-hero {
+    display: flex;
+    align-items: center;
 }
 
 .hero-left-side {
@@ -318,6 +329,20 @@ address {
 /* ===============/about=============== */
 
 /* ===============prices=============== */
+
+.prices-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-price-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+
 .price-list {
     font-family: var(--primery-font-family);
     font-weight: 400;
@@ -325,10 +350,28 @@ address {
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: var(--primery-text-color-dark-theme);
+    flex-basis: calc((100% - 30px) / 2);
+
+}
+
+.price-list-item {
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .prices {
     background-image: url(./images/img-about.png)
+}
+
+.modal-btn-centr {
+    margin-top: 44px;
+}
+
+.prices-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -352,11 +395,46 @@ address {
     line-height: 1.37;
     text-align: center;
     color: var(--secondary-text-color-white-theme);
+    max-width: 122px;
+    margin-top: 6px;
+    padding: 1px;
+
 }
+
+.container-advantages {
+
+    display: flex;
+}
+
+.advantages-list {
+    margin-left: 69px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.advantages-item {
+    padding: 20px;
+    min-width: 170px;
+    min-height: 133px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F7F7;
+}
+
 
 /* ===============/advantages=============== */
 
 /* ===============uor barbesr=============== */
+
+.barbers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
 .barbers-name {
     font-family: var(--primery-font-family);
     font-weight: 400;
@@ -365,6 +443,7 @@ address {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color-white-theme);
+    margin-top: 30px;
 }
 
 .barbers-qualification {
@@ -375,10 +454,33 @@ address {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+    margin-top: 8px;
+}
+
+.our-barbers {
+    background-color: #F7F7F7;
 }
 
 /* ===============/uor barbesr=============== */
+/* ===============working=============== */
+.container-working {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+/* ===============/working=============== */
+
 /* ===============contacts=============== */
+.container-contacts {
+    display: flex;
+}
+
+.container-address {
+    margin-left: 100px;
+}
+
 .contacts {
     background-color: #434455;
 }
@@ -405,13 +507,19 @@ address {
     font-weight: 700;
 }
 
+.contacts-list-item:not(:first-child) {
+    margin-top: 20px;
+}
+
 .contacts-list-item-mail {
     text-decoration-line: underline;
+
+
 }
 
 .wh {
     color: var(--secondary-text-color-dark-theme);
-    background-color: #ff6c00;
+    margin-top: 70px;
 }
 
 /* ===============/contacts=============== */
@@ -423,6 +531,28 @@ address {
     line-height: 1.36;
     letter-spacing: 0.2em;
     color: var(--primery-text-color-dark-theme);
+
 }
+
+.section-footer {
+    background-color: #F7F7F7;
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+.footer {
+
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+}
+
+.media-list-footer {
+    display: flex;
+    gap: 40px;
+
+}
+
 
 /* ===============/footer=============== */
