@@ -193,12 +193,31 @@ address {
 }
 
 .subtitle-dark-theme {
-    color: var(--subtitle-dark-theme-color)
+    color: var(--subtitle-dark-theme-color);
+    display: flex;
+    align-items: center;
+}
+
+.subtitle-dark-theme::before {
+    content: "";
+    background-color: rgba(157, 164, 189, 0.6);
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
 }
 
 .subtitle-white-theme {
     color: var(--secondary-text-color-white-theme);
+    display: flex;
+    align-items: center;
+}
 
+.subtitle-white-theme::before {
+    content: "";
+    background-color: var(--secondary-text-color-white-theme);
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
 }
 
 .secondary-description {
@@ -255,8 +274,18 @@ address {
     /* outline: 1px solid tomato; */
     margin: 0;
     padding: 0;
+    align-items: center;
 
 
+
+}
+
+.media-list::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: var(--secondary-text-color-white-theme);
+    margin-right: 40px;
 }
 
 .container-hero {
@@ -347,7 +376,6 @@ address {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
 
 }
 
@@ -372,8 +400,14 @@ address {
 
 }
 
-.prices {
-    background-image: url(./images/img-about.png)
+.decorativ-container {
+    width: 1600px;
+    background-image: url(./images/img-about.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #111319;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .modal-btn-centr {
@@ -391,6 +425,7 @@ address {
 
 /* ===============advantages=============== */
 .advantages-item-figure {
+    display: flex;
     font-family: var(--primery-font-family);
     font-weight: 700;
     font-size: 42px;
@@ -398,6 +433,17 @@ address {
     text-align: center;
     letter-spacing: 0.05em;
     color: var(--secondary-text-color-white-theme);
+}
+
+.advantages-item-figure::after {
+    content: "+";
+    font-family: var(--primery-font-family);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: var(--accent-color);
 }
 
 .advantages-item-description {
@@ -423,6 +469,7 @@ address {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+
 }
 
 .advantages-item {
@@ -434,16 +481,17 @@ address {
     justify-content: center;
     align-items: center;
     background-color: #F7F7F7;
+
+
 }
+
 
 
 /* ===============/advantages=============== */
 
 /* ===============uor barbesr=============== */
 
-/* .nfnfn {
-    display: flex;
-} */
+
 
 .barbers-list {
     display: flex;
@@ -477,7 +525,8 @@ address {
     background-color: #F7F7F7;
 }
 
-.barbers-sosial-item-link:hover .barbers-sosial-item-icon {
+.barbers-sosial-item-link:hover .barbers-sosial-item-icon,
+.barbers-sosial-item-link:focus .barbers-sosial-item-icon {
     fill: var(--accent-color);
 }
 
@@ -514,17 +563,36 @@ address {
 /* ===============/working=============== */
 
 /* ===============contacts=============== */
+.container-contacts-decorative {
+    background-color: #434455;
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./images/bg-contact.png);
+    background-color: #191C26;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+
+}
+
+.section-contacts-item {
+    flex-basis: calc((100% - 130px) / 2);
+}
+
 .container-contacts {
     display: flex;
+
+
 }
 
 .container-address {
     margin-left: 100px;
+
 }
 
-.contacts {
+/* .contacts {
     background-color: #434455;
-}
+} */
 
 .contacts-list {
     font-family: var(--primery-font-family);
