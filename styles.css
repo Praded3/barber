@@ -400,10 +400,10 @@ address {
 
 }
 
-.decorativ-container {
-    width: 1600px;
+.prices {
     background-image: url(./images/img-about.png);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center center;
     background-color: #111319;
     margin-left: auto;
@@ -562,40 +562,33 @@ address {
 
 /* ===============/working=============== */
 
+.section-booking {
+    background-color: #191C26;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.section-booking-contacts {
+    display: flex;
+
+}
+
 /* ===============contacts=============== */
-.container-contacts-decorative {
+.contacts {
     background-color: #434455;
-    width: 1600px;
     margin-left: auto;
     margin-right: auto;
     background-image: url(./images/bg-contact.png);
     background-color: #191C26;
     background-repeat: no-repeat;
     background-position: bottom right;
+    background-size: cover;
 
 }
-
-.section-contacts-item {
-    flex-basis: calc((100% - 130px) / 2);
-}
-
-.container-contacts {
-    display: flex;
-
-
-}
-
-.container-address {
-    margin-left: 100px;
-
-}
-
-/* .contacts {
-    background-color: #434455;
-} */
 
 .contacts-list {
     font-family: var(--primery-font-family);
+
 
 }
 
