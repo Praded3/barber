@@ -104,7 +104,7 @@
             </nav>
             <div class="address-container"><a class="nav-item link" href="tel:+380441111111">+38 044 111 11
                     11</a>
-                <button class="modal-btn" type="button">Online-booking</button>
+                <button class="modal-btn" type="button" data-modal-open>Online-booking</button>
             </div>
         </div>
     </header>
@@ -164,7 +164,7 @@
                         is
                         always "on the same wave" with
                         clients. Therefore, we are always ready to improve everyone who comes to us!</p>
-                    <button type="button" class="secondary-button">Online-booking</button>
+                    <button type="button" class="secondary-button" data-modal-open1>Online-booking</button>
                 </div>
             </div>
         </section>
@@ -215,8 +215,8 @@
                     </ul>
                 </div>
 
-                <div class="prices-button"><button type="button"
-                        class="modal-btn modal-btn-centr">Online-booking</button></div>
+                <div class="prices-button"><button type="button" class="modal-btn modal-btn-centr"
+                        data-modal-open2>Online-booking</button></div>
             </div>
 
 
@@ -551,7 +551,16 @@
             </div>
 
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="button close-button" data-modal-close><svg class="close" viewBox="0 0 8 8">
+                        <path
+                            d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z" />
+                    </svg></button>
+            </div>
+        </div>
     </main>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

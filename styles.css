@@ -52,6 +52,9 @@ address {
 
 }
 
+.button {
+    cursor: pointer;
+}
 
 /* ===========/noramalize=========== */
 
@@ -81,6 +84,8 @@ address {
     display: flex;
     margin-left: auto;
     align-items: center;
+    margin-right: 16px;
+
 }
 
 .logo-img {
@@ -140,7 +145,6 @@ address {
     line-height: 1.33;
     letter-spacing: 0.09em;
     text-transform: uppercase;
-    cursor: pointer;
     color: var(--secondary-text-color-dark-theme);
     background-color: transparent;
     border: 1px solid var(--accent-color);
@@ -161,7 +165,6 @@ address {
     line-height: 1.33;
     letter-spacing: 0.09em;
     text-transform: uppercase;
-    cursor: pointer;
     color: var(--secondary-text-color-white-theme);
     background-color: transparent;
     border: 1px solid var(--accent-color);
@@ -287,7 +290,6 @@ address {
 
 .media-list-hero {
     display: flex;
-
     align-items: center;
 
 }
@@ -357,7 +359,6 @@ address {
 
 }
 
-.hero {}
 
 /* ===============/hero=============== */
 /* ===============about=============== */
@@ -691,3 +692,72 @@ address {
 
 
 /* ===============/footer=============== */
+
+/* ===============backdrop=============== */
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(84, 84, 84, 0.5);
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 500px;
+    background-color: var(--secondary-text-color-dark-theme);
+}
+
+.close {
+    width: 12px;
+    height: 12px;
+    fill: var(--primery-text-color-white-theme);
+    transition: fill 250ms linear;
+}
+
+.close:hover,
+.close:focus {
+    fill: var(--secondary-text-color-dark-theme);
+
+}
+
+.close-button:hover .close,
+.close-button:focus .close {
+    fill: var(--secondary-text-color-dark-theme);
+}
+
+.close-button:hover,
+.close-button:focus {
+    background-color: var(--accent-color)
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid var(--accent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    padding: 0px;
+    background-color: var(--secondary-text-color-dark-theme);
+    transition: background-color 250ms linear;
+}
+
+/* ===============/backdrop=============== */
