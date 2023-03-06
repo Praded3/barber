@@ -9,10 +9,6 @@
     --secondary-font-family: 'Raleway', sans-serif;
 }
 
-/* .svg {
-    fill: #090B13;
-} */
-
 /* ===========noramalize=========== */
 h1,
 h2,
@@ -46,10 +42,6 @@ address {
     text-decoration: none;
 }
 
-/* * {
-    outline: 1px solid #434455;
-
-} */
 
 .container {
     width: 1200px;
@@ -81,7 +73,8 @@ address {
 .page-header {
     padding-top: 32px;
     padding-bottom: 32px;
-    background-color: #434455;
+    position: absolute;
+    width: 100%;
 }
 
 .address-container {
@@ -108,6 +101,7 @@ address {
     line-height: 1.37;
     letter-spacing: 0.2em;
     color: var(--secondary-text-color-white-theme);
+    transition: color 250ms linear;
 
 }
 
@@ -124,6 +118,7 @@ address {
     line-height: 1.33;
     letter-spacing: 0.1em;
     color: var(--secondary-text-color-dark-theme);
+    transition: color 250ms linear;
 }
 
 .nav-item {
@@ -134,7 +129,7 @@ address {
 .menu-item-link:hover,
 .menu-item-link:focus,
 .nav-item:hover,
-.nav-item:hover {
+.nav-item:focus {
     color: var(--accent-color)
 }
 
@@ -151,9 +146,11 @@ address {
     border: 1px solid var(--accent-color);
     border-radius: 25px;
     padding: 12px 20px;
+    transition: background-color 250ms linear, color 250ms linear;
 }
 
-.modal-btn:hover {
+.modal-btn:hover,
+.modal-btn:focus {
     background-color: var(--accent-color);
 }
 
@@ -170,6 +167,7 @@ address {
     border: 1px solid var(--accent-color);
     border-radius: 25px;
     padding: 12px 20px;
+    transition: background-color 250ms linear, color 250ms linear;
 
 }
 
@@ -269,18 +267,32 @@ address {
 
 /* ===============hero=============== */
 .media-list {
-    /* transform: rotate(-90deg); */
     display: flex;
-    /* outline: 1px solid tomato; */
-    margin: 0;
-    padding: 0;
+    justify-content: center;
     align-items: center;
-
-
 
 }
 
-.media-list::before {
+.media-list-link-hero1:not(:nth-child(2)) {
+    margin-left: 130px;
+}
+
+.footer-media-list::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: var(--secondary-text-color-white-theme);
+    margin-right: 40px;
+}
+
+.media-list-hero {
+    display: flex;
+
+    align-items: center;
+
+}
+
+.media-list-hero {
     content: "";
     width: 60px;
     height: 1px;
@@ -290,12 +302,28 @@ address {
 
 .container-hero {
     display: flex;
-    align-items: center;
-    /* background-color: #555555; */
+
 }
 
+
+
 .hero-left-side {
-    /* width: 100px; */
+
+    align-items: flex-end;
+    display: flex;
+    width: 100px;
+    position: relative;
+    padding-right: 30px;
+}
+
+.media-list-hero {
+    position: relative;
+    width: 100%;
+    transform: rotate(-90deg) translateX(50%);
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+
 }
 
 
@@ -539,6 +567,7 @@ address {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+
 }
 
 .barbers-sosial-list {
@@ -549,6 +578,9 @@ address {
 
 }
 
+.barbers-sosial-item-icon {
+    transition: fill 250ms linear;
+}
 
 
 /* ===============/uor barbesr=============== */
@@ -650,9 +682,10 @@ address {
 
 }
 
-.media-list-footer {
+.footer-media-list {
     display: flex;
     gap: 40px;
+    align-items: center;
 
 }
 
