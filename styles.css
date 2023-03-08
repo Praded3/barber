@@ -761,3 +761,47 @@ address {
 }
 
 /* ===============/backdrop=============== */
+/* ===============booking=============== */
+.container-contacts {
+    display: flex;
+}
+
+.input-name-phone {
+    display: flex;
+    gap: 30px;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-area {
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    margin-bottom: 44px;
+    font-family: var(--primery-font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #F7F7F7;
+
+}
+
+.input-area:focus {
+    outline: none;
+}
+
+.input-area::placeholder {
+    font-family: var(--primery-font-family);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
+}
+
+/* ===============/booking=============== */
