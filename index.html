@@ -502,29 +502,19 @@
         <div class="container-contacts-decorative">
             <section class="section contacts" id="contacts">
                 <div class="container container-contacts">
-                    <div class="booking section-contacts-item">
+                    <div class="booking">
                         <h2 class="section-title section-title-dark-theme">Online-booking</h2>
                         <form class="booking-form">
                             <span class="input-name-phone">
                                 <label><input type="text" name="name" required class="input-area"
                                         placeholder="name*"></label>
-                                <label><input type="tel" name="phone" required class="input-area"
-                                        placeholder="phone*"></label>
+                                <label><input type="tel" name="phone" required class="input-area" placeholder="phone*"
+                                        pattern="\+?[0-9\s\-\(\)]+" minlength="10"></label>
                             </span>
-                            <textarea class="massage" name="massage" placeholder="massage*"></textarea>
-                            <button class="submit-btn" type="submit"></button>
+                            <textarea class="massage" name="massage" placeholder="massage"></textarea>
+                            <button class="submit-btn" type="submit">Send</button>
                         </form>
                     </div>
-
-
-
-
-
-
-
-
-
-
                     <div class="container-address section-contacts-item">
                         <h2 class="section-title section-title-dark-theme section-title-white-dark-exception">
                             Contacts
@@ -548,15 +538,9 @@
                             22:00
                         </p>
                     </div>
-
                 </div>
-
             </section>
         </div>
-
-
-
-
         <footer class="section section-footer">
             <div class="container footer">
                 <p class="copyright">&copy;Copyright 2020</p>
@@ -571,12 +555,21 @@
             </div>
 
         </footer>
-        <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop" data-modal>
             <div class="modal">
                 <button type="button" class="button close-button" data-modal-close><svg class="close" viewBox="0 0 8 8">
                         <path
                             d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z" />
                     </svg></button>
+                <form class="booking-form">
+                    <span class="input-name-phone">
+                        <label><input type="text" name="name" required class="input-area" placeholder="name*"></label>
+                        <label><input type="tel" name="phone" required class="input-area" placeholder="phone*"
+                                pattern="\+?[0-9\s\-\(\)]+" minlength="10"></label>
+                    </span>
+                    <textarea class="massage" name="massage" placeholder="massage"></textarea>
+                    <button class="submit-btn" type="submit">Send</button>
+                </form>
             </div>
         </div>
     </main>
